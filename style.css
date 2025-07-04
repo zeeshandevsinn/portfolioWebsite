@@ -240,7 +240,7 @@ body {
   width: 100%;                 /* Ensure it spans the full container */
   height: 50px;
   background: #fbbf24;
-  color: white;
+  color:black;
   display: flex;               /* Flexbox for centering */
   align-items: center;         /* Vertical centering */
   justify-content: center;     /* Horizontal centering */
