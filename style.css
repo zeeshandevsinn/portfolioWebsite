@@ -10,8 +10,16 @@ body {
 .sidebar {
   background-color: #fff;
   padding: 30px;
-  min-height: 100vh;
+  height:1315px;
   border-right: 1px solid #ddd;
+}
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .social-icon {
@@ -207,116 +215,141 @@ body {
   color: #f1a400;
   font-weight: bold;
 }
+/* Base Styling */
 body {
-  background-color: #f5f6fc;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.pricing-section {
-  padding: 60px 0;
+  background-color: #f1f3f8;
+  font-family: 'Arial', sans-serif;
 }
 
 .section-title {
   font-size: 32px;
+  color: #222;
 }
 
 .section-subtitle {
-  font-size: 15px;
-  color: #888;
+  font-size: 14px;
 }
 
+/* Remove margin from .price-card */
 .price-card {
   background: #fff;
-  border-radius: 12px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 30px 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.08);
   position: relative;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+/* Remove margin here too, if it was previously applied */
+@media (min-width: 768px) {
+  .price-card {
+    margin: 0; /* No extra margin */
+  }
+}
+
+/* OPTIONAL: If still too tight, you can manually add tiny margin */
+.col-md-4 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
+.popular {
+  border-top: 5px solid #ffb400;
 }
 
 .popular-tag {
-  position: absolute;
-  top: -8px;
-  left: 0;
-  width: 100%;                 /* Ensure it spans the full container */
-  height: 50px;
-  background: #fbbf24;
+  background-color: #ffb400;
   color:black;
-  display: flex;               /* Flexbox for centering */
-  align-items: center;         /* Vertical centering */
-  justify-content: center;     /* Horizontal centering */
-  border-radius: 8px 8px 0 0;
-  font-weight: 600;
   font-size: 14px;
-  padding: 0;                  /* Remove any extra padding */
-  box-sizing: border-box;
+  font-weight: bold;
+  padding: 5px 0;
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
 }
 
-
 .plan-title {
-  font-weight: bold;
   font-size: 20px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .plan-price {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
+  color: #222;
   margin-bottom: 10px;
 }
 
 .hour {
-  font-size: 14px;
-  color: #666;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .plan-desc {
-  font-size: 14px;
-  color: #888;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .features {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
   margin-bottom: 25px;
 }
 
 .features li {
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 14px;
+  color: #333;
 }
 
 .icon-yes {
-  color: #fbbf24;
+  color: #ffb400;
   margin-right: 8px;
 }
 
 .icon-no {
-  color: #c4c4c4;
+  color: #ccc;
   margin-right: 8px;
 }
 
 .order-btn {
-  background: #fff;
-  color: #000;
-  border: 2px solid #fbbf24;
-  border-radius: 25px;
-  padding: 10px 30px;
-  width: 100%;
+  background: #f1f3f8;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
   font-weight: 600;
-  transition: 0.3s ease;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
 }
 
 .order-btn:hover {
-  background: #fbbf24;
-  color: white;
+  background: #e0e0e0;
 }
 
 .gold-btn {
-  background: #fbbf24;
-  color: white;
+  background-color: #ffb400;
+  color: #fff;
 }
+
+.gold-btn:hover {
+  background-color: #e0a900;
+}
+
+@media (min-width: 768px) {
+  .price-card {
+    margin: 0 10px;
+  }
+}
+
 
 body {
   font-family: 'Arial', sans-serif;
